@@ -15,7 +15,7 @@ def main():
     dump_path, analysis_mode, selected_category = setup_sidebar()
 
     # 메인 타이틀
-    st.title("🔬 Volatility3 UI for Windows 10/11")
+    st.title("🔬 Volatility3 UI")
 
     # 메인 컨텐츠 표시
     if dump_path and analysis_mode in ["🔍 일반 분석", "🎯 PID 분석"]:
