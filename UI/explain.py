@@ -1,24 +1,37 @@
 import streamlit as st
+from pathlib import Path
+
+def load_welcome_message():
+    """웰컴 메시지 Markdown 파일 로드"""
+    try:
+        # 현재 파일의 위치를 기준으로 Markdown 파일 경로 설정
+        current_dir = Path(__file__).parent
+        md_path = current_dir.parent / "res" / "welcome_message.md"
+
+        with open(md_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except FileNotFoundError:
+        return """
+## ❌ 웰컴 메시지 파일을 찾을 수 없습니다
+
+`res/welcome_message.md` 파일이 존재하지 않습니다.
+
+### 기본 사용법
+1. 좌측 사이드바에서 메모리 덤프 파일 경로를 설정하세요
+2. 분석 모드를 선택하세요
+3. 분석을 시작하세요
+        """
+    except Exception as e:
+        return f"""
+## ❌ 웰컴 메시지 로드 중 오류 발생
+
+오류 내용: {str(e)}
+
+기본 사용법을 위해 사이드바를 확인하세요.
+        """
+
 
 def show_welcome_page():
     """웰컴 페이지 표시"""
-    st.markdown("""
-    ## 🚀 시작하기
-
-    1. **메모리 덤프 준비**: Magnet RAM Capture 등으로 생성한 .raw 또는 .bin 파일
-    2. **파일 경로 설정**: 좌측 사이드바에서 메모리 덤프 파일 경로 입력
-    3. **분석 모드 선택**: 사이드바에서 원하는 분석 방식 선택
-    4. **분석 시작**: 설정 완료 후 '분석 시작' 버튼 클릭
-
-    ### 📋 분석 모드별 특징
-
-    **🔍 일반 분석**
-    - 카테고리별 포괄적 분석
-    - 멀티프로세싱으로 빠른 분석
-    - 전체 시스템 상태 파악
-
-    **🎯 PID 분석**
-    - 특정 프로세스 심화 분석
-    - DLL, 메모리, 가상메모리 분석
-    - 의심 프로세스 집중 조사
-    """)
+    welcome_content = load_welcome_message()
+    st.markdown(welcome_content)

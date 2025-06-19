@@ -22,7 +22,6 @@ def open_folder(folder_path: str):
             subprocess.run(["open", folder_path])
         else:  # Linux
             subprocess.run(["xdg-open", folder_path])
-        st.success(f"✅ 폴더가 열렸습니다!")
     except Exception as e:
         st.error(f"❌ 폴더 열기 실패: {str(e)}")
 

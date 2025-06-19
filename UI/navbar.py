@@ -92,6 +92,23 @@ def setup_sidebar():
 
         st.session_state["max_workers"] = max_workers
 
+        # GitHub 정보 표시
+        st.divider()
+        st.markdown(
+            """
+            <div style='text-align: center; padding: 10px; margin-top: 20px;'>
+                <p style='margin: 0; font-size: 12px; color: #666;'>Developed by</p>
+                <p style='margin: 0; font-size: 14px; font-weight: bold;'>LimSeongHyeon</p>
+                <a href='https://github.com/LimSeongHyeon/Volatility3_UI' target='_blank' style='text-decoration: none;'>
+                    <p style='margin: 5px 0 0 0; font-size: 12px; color: #0366d6;'>
+                        🔗 GitHub
+                    </p>
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
     # 현재 경로 가져오기
     dump_path = st.session_state.get("dump_path", "")
 
