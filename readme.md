@@ -1,6 +1,7 @@
 # 🔬 Volatility3 Web UI
+![image](https://github.com/user-attachments/assets/f1e1613d-73e3-49a1-81df-97ca02f963cc)
 
-Windows 10/11 메모리 포렌식을 위한 Volatility3 웹 기반 사용자 인터페이스
+Windows 메모리 포렌식을 위한 Volatility3 웹 기반 사용자 인터페이스
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
