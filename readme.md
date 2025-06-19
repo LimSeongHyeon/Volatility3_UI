@@ -244,7 +244,7 @@ streamlit run main.py --server.headless true
 
 - 버그 리포트: [Issues](https://github.com/your-repo/volatility3-web-ui/issues)
 - 기능 요청: [Discussions](https://github.com/your-repo/volatility3-web-ui/discussions)
-- 이메일: your-email@example.com
+- 이메일: me@limseonghyeon.com
 
 ## 🙏 감사의 말
 
