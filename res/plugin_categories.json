@@ -1,0 +1,34 @@
+{
+  "🔍 시스템 정보": [
+    {"emoji": "🧩", "label": "이미지 정보", "command": "windows.info"},
+    {"emoji": "💽", "label": "프로그램 실행 기록", "command": "windows.shimcachemem.ShimcacheMem"},
+    {"emoji": "🖥️", "label": "GUI 프로그램 실행", "command": "windows.registry.userassist"},
+    {"emoji": "🔑", "label": "레지스트리 키", "command": "windows.registry.printkey"},
+    {"emoji": "🔩", "label": "환경변수", "command": "windows.envars"}
+  ],
+  "💻 프로세스 분석": [
+    {"emoji": "📋", "label": "프로세스 목록", "command": "windows.pslist"},
+    {"emoji": "🌲", "label": "실행 트리", "command": "windows.pstree"},
+    {"emoji": "🛠️", "label": "서비스 목록", "command": "windows.svcscan"},
+    {"emoji": "📟", "label": "명령어 스캔", "command": "windows.cmdscan"},
+    {"emoji": "📜", "label": "명령어 인자", "command": "windows.cmdline"},
+    {"emoji": "📋", "label": "콘솔 히스토리", "command": "windows.consoles"}
+  ],
+  "🌐 네트워크 분석": [
+    {"emoji": "🌐", "label": "네트워크 연결", "command": "windows.netscan"},
+    {"emoji": "📡", "label": "네트워크 통계", "command": "windows.netstat"}
+  ],
+  "🎯 악성코드 분석": [
+    {"emoji": "🎯", "label": "콜백 함수 후킹 탐지", "command": "windows.callbacks"},
+    {"emoji": "🔍", "label": "메모리 패치 탐지", "command": "windows.malfind"},
+    {"emoji": "📦", "label": "DLL 목록", "command": "windows.dlllist"},
+    {"emoji": "👻", "label": "숨김 프로세스", "command": "windows.psxview"},
+    {"emoji": "🔒", "label": "드라이버 스캔", "command": "windows.driverscan"},
+    {"emoji": "🧬", "label": "모듈 스캔", "command": "windows.modscan"},
+    {"emoji": "📊", "label": "시스템 YARA 스캔", "command": "yarascan"}
+  ],
+  "🔧 고급 분석": [
+    {"emoji": "🔎", "label": "파일 스캔", "command": "windows.filescan"},
+    {"emoji": "⏰", "label": "타임라인 분석", "command": "timeliner"}
+  ]
+}

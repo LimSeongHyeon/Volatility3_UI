@@ -1,0 +1,10 @@
+{
+  "pid_plugins": [
+    {"emoji": "📦", "label": "DLL 목록 분석", "command": "windows.dlllist"},
+    {"emoji": "🧪", "label": "악성 메모리 분석", "command": "windows.malfind"},
+    {"emoji": "🎰", "label": "가상메모리 분석", "command": "windows.vadinfo"},
+    {"emoji": "📄", "label": "프로세스 파일 덤프", "command": "windows.dumpfiles"},
+    {"emoji": "🧠", "label": "메모리 맵 분석", "command": "windows.memmap"},
+    {"emoji": "📊", "label": "프로세스 YARA 스캔", "command": "yarascan"}
+  ]
+}
