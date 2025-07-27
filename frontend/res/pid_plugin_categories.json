@@ -1,5 +1,5 @@
 {
-  "pid_plugins": [
+  "💻 프로세스 상세 분석": [
     {"emoji": "📦", "label": "DLL 목록 분석", "command": "windows.dlllist"},
     {"emoji": "🧪", "label": "악성 메모리 분석", "command": "windows.malfind"},
     {"emoji": "🎰", "label": "가상메모리 분석", "command": "windows.vadinfo"},
