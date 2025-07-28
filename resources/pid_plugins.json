@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "PID 기반 Volatility3 플러그인 설정",
+    "last_updated": "2025-07-28"
+  },
+  "pid_plugins": [
+    {"id": "dlllist", "emoji": "📦", "label": "DLL 목록 분석", "command": "windows.dlllist", "description": "프로세스가 로드한 DLL 목록 분석"},
+    {"id": "malfind", "emoji": "🧪", "label": "악성 메모리 분석", "command": "windows.malfind", "description": "실행 가능한 메모리 영역에서 악성 코드 탐지"},
+    {"id": "vadinfo", "emoji": "🎰", "label": "가상메모리 분석", "command": "windows.vadinfo", "description": "프로세스의 가상 주소 공간 분석"},
+    {"id": "dumpfiles", "emoji": "📄", "label": "프로세스 파일 덤프", "command": "windows.dumpfiles", "description": "프로세스 관련 파일들을 추출"},
+    {"id": "memmap", "emoji": "🧠", "label": "메모리 맵 분석", "command": "windows.memmap", "description": "프로세스 메모리 매핑 정보 분석"},
+    {"id": "yarascan_pid", "emoji": "📊", "label": "프로세스 YARA 스캔", "command": "yarascan", "description": "특정 프로세스에 대한 YARA 룰 스캔"}
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Volatility3 플러그인 카테고리 설정",
+    "last_updated": "2025-07-28"
+  },
+  "categories": {
+    "system_info": {
+      "id": "system_info",
+      "title": "🔍 시스템 정보",
+      "description": "시스템 기본 정보 및 설정 분석",
+      "plugins": [
+        {"id": "info", "emoji": "🧩", "label": "이미지 정보", "command": "windows.info"},
+        {"id": "shimcache", "emoji": "💽", "label": "프로그램 실행 기록", "command": "windows.shimcachemem.ShimcacheMem"},
+        {"id": "userassist", "emoji": "🖥️", "label": "GUI 프로그램 실행", "command": "windows.registry.userassist"},
+        {"id": "printkey", "emoji": "🔑", "label": "레지스트리 키", "command": "windows.registry.printkey"},
+        {"id": "envars", "emoji": "🔩", "label": "환경변수", "command": "windows.envars"}
+      ]
+    },
+    "process_analysis": {
+      "id": "process_analysis",
+      "title": "💻 프로세스 분석",
+      "description": "실행 중인 프로세스 및 서비스 분석",
+      "plugins": [
+        {"id": "pslist", "emoji": "📋", "label": "프로세스 목록", "command": "windows.pslist"},
+        {"id": "pstree", "emoji": "🌲", "label": "실행 트리", "command": "windows.pstree"},
+        {"id": "svcscan", "emoji": "🛠️", "label": "서비스 목록", "command": "windows.svcscan"},
+        {"id": "cmdscan", "emoji": "📟", "label": "명령어 스캔", "command": "windows.cmdscan"},
+        {"id": "cmdline", "emoji": "📜", "label": "명령어 인자", "command": "windows.cmdline"},
+        {"id": "consoles", "emoji": "📋", "label": "콘솔 히스토리", "command": "windows.consoles"}
+      ]
+    },
+    "network_analysis": {
+      "id": "network_analysis",
+      "title": "🌐 네트워크 분석",
+      "description": "네트워크 연결 및 통신 분석",
+      "plugins": [
+        {"id": "netscan", "emoji": "🌐", "label": "네트워크 연결", "command": "windows.netscan"},
+        {"id": "netstat", "emoji": "📡", "label": "네트워크 통계", "command": "windows.netstat"}
+      ]
+    },
+    "malware_analysis": {
+      "id": "malware_analysis",
+      "title": "🎯 악성코드 분석",
+      "description": "악성코드 탐지 및 분석",
+      "plugins": [
+        {"id": "callbacks", "emoji": "🎯", "label": "콜백 함수 후킹 탐지", "command": "windows.callbacks"},
+        {"id": "malfind", "emoji": "🔍", "label": "메모리 패치 탐지", "command": "windows.malfind"},
+        {"id": "dlllist", "emoji": "📦", "label": "DLL 목록", "command": "windows.dlllist"},
+        {"id": "psxview", "emoji": "👻", "label": "숨김 프로세스", "command": "windows.psxview"},
+        {"id": "driverscan", "emoji": "🔒", "label": "드라이버 스캔", "command": "windows.driverscan"},
+        {"id": "modscan", "emoji": "🧬", "label": "모듈 스캔", "command": "windows.modscan"},
+        {"id": "yarascan", "emoji": "📊", "label": "시스템 YARA 스캔", "command": "yarascan"}
+      ]
+    },
+    "advanced_analysis": {
+      "id": "advanced_analysis",
+      "title": "🔧 고급 분석",
+      "description": "파일 시스템 및 타임라인 분석",
+      "plugins": [
+        {"id": "filescan", "emoji": "🔎", "label": "파일 스캔", "command": "windows.filescan"},
+        {"id": "timeliner", "emoji": "⏰", "label": "타임라인 분석", "command": "timeliner"}
+      ]
+    }
+  }
+}

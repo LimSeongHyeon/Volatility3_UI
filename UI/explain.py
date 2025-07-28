@@ -6,7 +6,7 @@ def load_welcome_message():
     try:
         # 현재 파일의 위치를 기준으로 Markdown 파일 경로 설정
         current_dir = Path(__file__).parent
-        md_path = current_dir.parent / "res" / "welcome_message.md"
+        md_path = current_dir.parent / "resources" / "welcome_message.md"
 
         with open(md_path, 'r', encoding='utf-8') as f:
             return f.read()
@@ -14,7 +14,7 @@ def load_welcome_message():
         return """
 ## ❌ 웰컴 메시지 파일을 찾을 수 없습니다
 
-`res/welcome_message.md` 파일이 존재하지 않습니다.
+`resources/welcome_message.md` 파일이 존재하지 않습니다.
 
 ### 기본 사용법
 1. 좌측 사이드바에서 메모리 덤프 파일 경로를 설정하세요
